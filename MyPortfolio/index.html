@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amey's Portfolio | Crafting Digital Experiences that Inspire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./assets/gs012.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet">
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .hover-gradient-skills{
+                @apply hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200
+            }
+        }
+      </style>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Navbar -->
+    <nav class="flex py-4 px-6 justify-between">
+        <div class="left md:flex">
+            <span class="text-xl font-display font-bold">Amey's Portfolio</span>
+        </div>
+        <div class="text-xl right gap-5 hidden md:flex">
+            <a href="" class="hover:text-purple-800 font-bold">Home</a>
+            <a href="#about" class="hover:text-purple-800 font-bold">About</a>
+            <a href="./works.html" class="hover:text-purple-800 font-bold">Work</a>
+            <a href="#contact" class="hover:text-purple-800 font-bold">Contact</a>
+        </div>
+        <div onclick="handleMenu()" class="cursor-pointer md:hidden">
+            <i class="ri-menu-line"></i>
+        </div>
+
+        <div id="nav-dialog" class="hidden py-2 px-6 fixed z-10 md:hidden bg-white inset-0 ">
+                <div class="flex justify-between">
+                    <a href="#" class="flex items-center ">
+                        <span class="text-lg font-display font-bold">Amey's Portfolio</span>
+                    </a>
+                    <button class="p-2 md:hidden" onclick="handleMenu()">
+                        <i class="ri-close-line text-lg"></i>
+                    </button>
+                </div>
+
+                <div class="mt-6">
+                    <a href="" class="font-medium m-3 p-3 hover:bg-gray-200 block rounded-lg">Home</a>
+                    <a href="#about" class="font-medium m-3 p-3 hover:bg-gray-200 block rounded-lg">About</a>
+                    <a href="./works.html" class="font-medium m-3 p-3 hover:bg-gray-200 block rounded-lg">Works</a>
+                    <a href="#contact" class="font-medium m-3 p-3 hover:bg-gray-200 block rounded-lg">Contact</a>
+                </div>
+                <div class="h-[1px] bg-gray-200"></div>
+        </div>
+    </nav>
+    
+<!-- Hero-Section -->
+    <div class="bg-gradient-to-b from-red-100 via-purple-100 to-transparent min-h-screen" id="home">
+       <div class="hero-section flex flex-col gap-12">
+            <h1 class="leading-none mt-24 text-6xl font-display font-bold text-center">Crafting <span class="text-indigo-700">Digital</span> <span class="text-purple-800">Experiences</span> That Inspire</h1>
+            <p class="text-center leading-7 md:text-xl md:text-wrap md:mx-7">Turning creative ideas into user-centric solutions, blending design and technology for seamless digital experiences.</p>
+       </div>
+        
+       <!-- skill-container -->
+       <div id="skill-container" class="mt-10 md:flex md:flex-col md:justify-center items-center">
+        <!-- row1 -->
+        <div class="row-1 max-w-screen-sm flex mx-2 gap-2 justify-center lg:gap-3">
+            <div class="bg-white hover-gradient-skills w-20 h-20 border rounded-md flex justify-center items-center shadow-lg md:w-24 md:h-24">
+                <img src="/assets/python.png" class="w-12 h-12">
+            </div>
+            <div class="bg-white hover-gradient-skills w-20 h-20 border rounded-md flex justify-center items-center shadow-lg md:w-24 md:h-24">
+                <img src="/assets/html-5.png" class="w-12 h-12">
+            </div>
+            <div class="bg-white hover-gradient-skills w-20 h-20 border rounded-md flex justify-center items-center shadow-lg md:w-24 md:h-24">
+                <img src="/assets/css-3.png" class="w-12 h-12">
+            </div>
+            <div class="bg-white hover-gradient-skills w-20 h-20 border rounded-md flex justify-center items-center shadow-lg md:w-24 md:h-24">
+                <img src="/assets/js.png" class="w-12 h-12">
+            </div>
+            <div class="bg-white hover-gradient-skills w-20 h-20 border rounded-md flex justify-center items-center shadow-lg md:w-24 md:h-24">
+                <img src="/assets/mysql.png" class="w-16 h-12">
+            </div>
+        </div>
+
+        <div class="lg:flex lg:gap-4">
+             <!-- row2 -->
+             <div class="row-2 max-w-screen-sm flex gap-4 mt-3 justify-center">
+                <div class="bg-white hover-gradient-skills w-20 h-20 border rounded-md flex justify-center items-center shadow-lg md:w-24 md:h-24">
+                    <img src="/assets/bootstrap.png" class="w-12 h-12">
+                </div>
+                <div class="bg-white hover-gradient-skills w-20 h-20 border rounded-md flex justify-center items-center shadow-lg md:w-24 md:h-24">
+                    <img src="/assets/php.png" class="w-12 h-12">
+                </div>
+                <div class="bg-white hover-gradient-skills w-20 h-20 border rounded-md flex justify-center items-center shadow-lg md:w-24 md:h-24">
+                    <img src="/assets/react.png" class="w-12 h-12">
+                </div>
+                <div class="bg-white hover-gradient-skills w-20 h-20 border rounded-md flex justify-center items-center shadow-lg md:w-24 md:h-24">
+                    <img src="/assets/powerbi.png" class="w-20 h-12">
+                </div>  
+            </div>
+
+            <!-- row-3 -->
+            <div class="row-3 max-w-screen-sm flex gap-4 mt-3 justify-center">
+                <div class="bg-white hover-gradient-skills w-20 h-20 border rounded-md flex justify-center items-center shadow-lg md:w-24 md:h-24">
+                    <img src="/assets/figma.png" class="w-8 h-12">
+                </div>
+                <div class="bg-white hover-gradient-skills w-20 h-20 border rounded-md flex justify-center items-center shadow-lg md:w-24 md:h-24">
+                    <img src="/assets/git.png" class="w-12 h-12">
+                </div>
+                <div class="bg-white hover-gradient-skills w-20 h-20 border rounded-md flex justify-center items-center shadow-lg md:w-24 md:h-24">
+                    <img src="https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdxy1c2bvl6odeo52dodk.jpg" class="w-12 h-12">
+                </div>
+            </div>
+        </div>
+       </div>
+
+       <div class="text-center mt-9 sm:mt-28">
+        <a href="./works.html" class="bg-slate-950 text-white px-7 py-2 rounded-lg animate-pulse mt-12 sm:text-xl">View my Work</a>
+       </div>
+    </div>
+
+<!-- About Section -->
+<div class="min-h-screen lg:-mt-12 mx-4" id="about">
+   <div id="about-me-heading" class="mt-14 lg:mt-2">
+    <span class="underline decoration-pink-500 text-2xl md:text-4xl lg:text-6xl">About Me</span>
+   </div>
+
+   <div class="mt-8 lg:flex lg:mt-14">
+        <div class="flex items-center justify-center lg:min-w-fit">
+            <img src="/assets/potrait pic01.jpg" class="h-56  md:h-64 lg:mx-2 lg:h-80 ">
+        </div>
+        
+        <div class="mt-8 text-center">
+            <div class="hidden md:inline-block md:text-[30px] lg:text-4xl font-extrabold">
+                <span class="text-indigo-800">Technology Expertise</span>|<span class="text-purple-800">Innovative Development</span>|<span class="text-pink-800">Digital Solutions</span>
+            </div>
+            <p class="leading-relaxed text-justify text-xl md:mt-6 lg:mx-16">Enthusiastic and ambitious  
+                in the field of Information Technology. I am dedicated to delivering the best solutions to the industry through my expertise in web development, software development, and AI technologies. My goal is to contribute to the advancement of technology by leveraging my skills and embracing new challenges in the tech landscape.</p>
+        </div>
+   </div>
+<!-- 
+   <button type="button" title="click here to know me better!" class="mt-12 bg-red-900 text-white px-6 py-3 text-xl hover:bg-red-500 lg:mx-2">More about me</button> -->
+</div>
+
+<!-- Work Section -->
+ <div class=" min-h-screen  -mt-28">
+    <h1 class=" text-2xl underline decoration-pink-500 mx-4 md:text-4xl lg:text-6xl">My Work</h1>
+    <!-- Project_box -->
+    <div class="grid gap-4 m-4 sm:grid-cols-2 lg:grid-cols-3 lg:mt-10">
+        <div id="project-1" class=" min-h-[150px] sm:min-h-[250px] lg:min-h-[300px] bg-red-800 rounded-md hover:cursor-pointer ">
+            <img src="/assets/too good.png" class="h-full w-full object-fill hover:scale-105 duration-700" >
+        </div>
+        <div id="project-1" class="min-h-[150px] sm:min-h-[250px] lg:min-h-[300px] bg-red-800 rounded-md hover:cursor-pointer  duration-700">
+            <img src="/assets/miranda.png" class="h-full w-full object-fill hover:scale-105 duration-700">
+        </div>
+        <div id="project-1" class="min-h-[150px] sm:min-h-[250px] lg:min-h-[300px] bg-red-800 rounded-md hover:cursor-pointer  duration-700">
+            <img src="/assets/basic dept.png" class="h-full w-full object-fill hover:scale-105 duration-700">
+        </div>
+        <div id="project-1" class="min-h-[150px] sm:min-h-[250px] lg:min-h-[300px] bg-red-800 rounded-md hover:cursor-pointer  duration-700">
+            <img src="/assets/monogram.png" class="h-full w-full object-fill hover:scale-105 duration-700">
+        </div>
+        <div id="project-1" class="min-h-[150px] sm:min-h-[250px] lg:min-h-[300px] bg-red-800 rounded-md hover:cursor-pointer  duration-700">
+            <img src="/assets/monstercat.png" class="h-full w-full object-fill hover:scale-105 duration-700">
+        </div>
+        <div id="project-1" class="min-h-[150px] sm:min-h-[250px] lg:min-h-[300px] bg-red-800 rounded-md hover:cursor-pointer  duration-700">
+            <img src="/assets/qrates.png" class="h-full w-full object-fill hover:scale-105 duration-700">
+        </div>
+    </div>
+
+    <div class="flex justify-center items-center gap-6 mt-16">
+        <a href="./works.html" type="button" class="shadow-xl text-center bg-slate-900 hover:bg-slate-800 text-white font-bold px-3 py-2 rounded-sm sm:text-2xl ">View More </a> 
+    </div>
+ </div>
+
+<!-- Contact Me -->
+ <div class="min-h-fit" id="contact">
+    <h1 class="p-6 mt-7 text-center text-4xl sm:text-4xl sm:mt-11 lg:mt-20  underline decoration-pink-500">Let's Connect & Work Together</h1>
+
+    <div class=" min-h-fit mx-3 mt-10 lg:flex lg:flex-col lg:justify-center lg:items-center">
+        <div>
+            <h1 class="text-center text-xl font-extrabold">Got project in mind? Feel Free to Connect</h1>
+        </div>
+
+        <div class="p-12 flex flex-col gap-7 lg:flex lg:flex-row lg:justify-center lg:items-center ">
+            <div id="email" class=" flex flex-col items-center justify-center gap-2">
+                <i class="ri-mail-line text-4xl"></i>
+                <h4 class="text-lg font-extrabold ">Email Me</h4>
+                <p class="text-center sm:text-lg">Email me for general queries and collaborations. I'm always happy to connect and discuss potential opportunities.</p>
+                <a  class="text-purple-800">salaskaramey09@gmail.com</a>
+            </div>
+            <div id="linkedin" class="flex flex-col items-center justify-center gap-2">
+                <i class="ri-linkedin-box-fill text-4xl"></i>
+                <h4 class="text-lg font-extrabold ">LinkedIn</h4>
+                <p class="text-center sm:text-lg">Connect with me on LinkedIn, stay updated on my professional achievements, and explore potential collaboration opportunities.</p>
+                <a href="https://www.linkedin.com/in/ameysalaskar/" class="text-purple-800">https://www.linkedin.com/in/ameysalaskar/</a>
+            </div>
+            <div id="github" class="flex flex-col items-center gap-2">
+                <i class="ri-github-fill text-4xl"></i>
+                <h4 class="text-lg font-extrabold ">Github</h4>
+                <p class="text-center sm:text-lg">Check out my GitHub to explore my personal projects, contributions to open-source, and coding skills</p>
+                <a href="https://github.com/Ameysalaskar" class="text-purple-800">https://github.com/Ameysalaskar</a>
+            </div>
+        </div>
+
+    </div>
+ </div>
+
+<!-- footer section -->
+<footer class="bg-black text-white h-11 flex justify-center items-center">
+    <h1 class="p-4">copyright &copy; 2024 ameycreation</h1>
+</footer>
+ 
+<script src="./script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
